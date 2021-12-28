@@ -1,0 +1,33 @@
+# =======================================
+# Server
+# =======================================
+server:
+  port: 8888
+
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+spring:
+  application:
+    name: demo-centralize-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lorince-tawamba/demo-centralize-config.git
+          default-label: main
+          username: lorince-tawamba
+          password: votre-mot-de-passe-ici
+          search-paths: demo-centralize-premier-microservice, demo-centralize-second-microservice, demo-centralize-troisieme-microservice
+
+# =======================================
+# Enables Spring Boot Actuator end points
+# =======================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: "ALWAYS"
