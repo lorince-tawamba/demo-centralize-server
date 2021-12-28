@@ -17,7 +17,7 @@ spring:
           uri: https://github.com/lorince-tawamba/demo-centralize-config.git
           default-label: main
           username: lorince-tawamba
-          password: votre-mot-de-passe-ici
+          password: Junior@2019@Ismael
           search-paths: demo-centralize-premier-microservice, demo-centralize-second-microservice, demo-centralize-troisieme-microservice
 
 # =======================================

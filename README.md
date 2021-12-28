@@ -34,7 +34,7 @@ You’ll have to do this for both application. After this command executes, you�
 **Create the docker image**
 
 ```bash
-  docker build -t lorincetawamba/gescom-config-server:1.0.0 -f Dockerfile .
+  docker build -t lorincetawamba/demo-centralize-config-server:1.0.0 -f Dockerfile .
 ```
 
 **Lister toutes les images Docker sur la machine**
@@ -48,7 +48,7 @@ You’ll have to do this for both application. After this command executes, you�
 **Démarre une image Docker**
 
 ```bash
-  docker run -d -p 8888:8888 -t lorincetawamba/gescom-config-server:1.0.0
+  docker run -d -p 8888:8888 -t lorincetawamba/demo-centralize-config-server:1.0.0
 ```
 
 **Lister tous les conteneurs en cour d’execution sur la machine**
@@ -66,7 +66,7 @@ You’ll have to do this for both application. After this command executes, you�
 **Pousser l’image sur le DokerHub**
 
 ```bash
-  docker image push lorincetawamba/gescom-config-server:1.0.0
+  docker image push lorincetawamba/demo-centralize-config-server:1.0.0
 ```
 
 # Authors
